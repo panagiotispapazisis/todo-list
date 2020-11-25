@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 
-function Form() {
+function Form({ setInputText }) {
   const inputTextHandler = (e) => {
-    console.log(e);
-    console.log(e.target);
-    console.log(e.target.value);
+    setInputText(e.target.value);
   };
   return (
     <div>
